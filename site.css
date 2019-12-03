@@ -34,6 +34,11 @@ body {
     background-color: #FFFFFF;
   }
 
+.no-hover:hover {
+  background-color: #FFAB40;
+  cursor: auto;
+}
+
 .tigermaps-logo {
   width: 100%;
 }
@@ -60,15 +65,40 @@ body {
 }
 
 .alert-button {
-margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .big-infopane {
   padding: 7em 0;
 }
 
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  border: 2px solid black;
+}
+
+.schedule-grid > div {
+  border: 1px black solid
+}
+
+.schedule-grid > div:nth-child(even) {
+  background-color: #FFAB40;
+}
+
+.schedule-grid > div:nth-child(odd) {
+  background-color: #B7B7B7;
+  padding: 1.25em 0.5em;
+}
+
+.split-grid-50 {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2%;
+}
+
 #contact-info-text {
-padding: 3em 0;
+  padding: 3em 0;
 }
 
 #add-alert-button {
@@ -76,7 +106,6 @@ padding: 3em 0;
 }
 
 #add-alert-homepage {
-padding: 0.5em 0;
-margin-top: 0.1em;
+  padding: 0.5em 0;
+  margin-top: 0.1em;
 }
-
