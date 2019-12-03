@@ -3,6 +3,9 @@ body {
   font-family: sans-serif;
 }
 
+/*
+Sets up the main dual split for all pages
+ */
 .main-split-grid {
   display: grid;
   grid-template-columns: 30% 62%;
@@ -11,10 +14,16 @@ body {
   margin: 1em;
 }
 
+/*
+Puts spacing between stacked buttons
+ */
 .button-column > div {
   margin-bottom: 1rem;
 }
 
+/*
+Commonly used buttons throughout the application
+ */
 .nav-button {
   display: flex;
   align-content: center;
@@ -34,6 +43,9 @@ body {
     background-color: #FFFFFF;
   }
 
+/*
+Disables hover effect when applied to a .nav-button
+*/
 .no-hover:hover {
   background-color: #FFAB40;
   cursor: auto;
@@ -43,11 +55,17 @@ body {
   width: 100%;
 }
 
+/*
+Scales the map
+ */
 .campus-map {
   width: 100%;
   height: 70%;
 }
 
+/*
+Styles the textinput used throughout the application
+ */
 .text-input {
   display: flex;
   align-content: center;
@@ -64,47 +82,77 @@ body {
   border: 1px #FFAB40 solid;
 }
 
+/*
+Puts spacing between alerts on alerts page
+ */
 .alert-button {
   margin-bottom: 0.5em;
 }
 
+/*
+Makes infopanes large
+ */
 .big-infopane {
   padding: 7em 0;
 }
 
+/*
+Overall layout for schedule
+ */
 .schedule-grid {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 3fr;
   border: 2px solid black;
 }
 
+/*
+Puts a border between cells in the schedule
+ */
 .schedule-grid > div {
   border: 1px black solid
 }
 
+/*
+Makes the orange cells orange in the schedule
+ */
 .schedule-grid > div:nth-child(even) {
   background-color: #FFAB40;
 }
 
+/*
+Sets up height and color of grey cells in the schedule
+ */
 .schedule-grid > div:nth-child(odd) {
   background-color: #B7B7B7;
   padding: 1.25em 0.5em;
 }
 
+/*
+Splits two elements side by side with space between
+ */
 .split-grid-50 {
   display: grid;
   grid-template-columns: 49% 49%;
   grid-gap: 2%;
 }
 
+/*
+Sizes contact info pane
+ */
 #contact-info-text {
   padding: 3em 0;
 }
 
+/*
+Sizes alerts
+ */
 #add-alert-button {
   padding: 1em 0;
 }
 
+/*
+Size add alert button on homepage
+ */
 #add-alert-homepage {
   padding: 0.5em 0;
   margin-top: 0.1em;
