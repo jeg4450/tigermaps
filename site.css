@@ -1,3 +1,65 @@
-h1 {
-  color: orange;
+body {
+  background-color: #FFF2CC;
+  font-family: sans-serif;
+}
+
+.main-split-grid {
+  display: grid;
+  grid-template-columns: 30% 62%;
+  grid-gap: 3%;
+  height: 100%;
+  margin: 1em;
+}
+
+.button-column > div {
+margin-bottom: 1rem;
+}
+
+.nav-button {
+display: flex;
+align-content: center;
+justify-content: center;
+width: 100%;
+padding: 0.75em 0;
+background-color: #FFAB40;
+border: 1px solid black;
+font-size: 2em;
+font-weight: bold;
+cursor: pointer;
+user-select: none;
+transition: 0.2s;
+}
+
+.nav-button:hover {
+background-color: #FFFFFF;
+}
+
+.tigermaps-logo {
+  width: 100%;
+}
+
+.campus-map {
+width: 100%;
+height: 70%;
+}
+
+.text-input {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.3em;
+  border: 1px solid gray;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.text-input:hover {
+  border: 1px #FFAB40 solid;
+}
+
+#add-alert-homepage {
+  padding: 0.5em 0;
+  margin-top: 0.1em;
 }

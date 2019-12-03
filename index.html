@@ -1,6 +1,42 @@
 <head>
     <title>Tiger Maps</title>
-    <link href="../tigermaps/site.css" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
 </head>
 
-<h1>Welcome to Tigermaps!</h1>
+<div class="main-split-grid">
+    <div class="button-column">
+        <div class="nav-button" onclick="location.href = 'pages/route.html'">
+            Route
+        </div>
+
+        <div class="nav-button" onclick="location.href = 'pages/alerts.html'">
+            Alerts
+        </div>
+
+        <div class="nav-button">
+            Recommendations
+        </div>
+
+        <div class="nav-button">
+            Help
+        </div>
+
+        <div>
+            <img class="tigermaps-logo" src="assets/tigermaps-logo.png">
+        </div>
+    </div>
+    <div class>
+        <iframe class="campus-map" src="https://maps.rit.edu"></iframe>
+
+        <br>
+        <br>
+
+        <div class="nav-button">
+            Schedule
+        </div>
+
+        <div id="add-alert-homepage" class="nav-button">
+            Add Alert
+        </div>
+    </div>
+</div>
